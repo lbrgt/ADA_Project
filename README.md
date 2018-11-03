@@ -2,6 +2,7 @@
 
 # Abstract
 We all know that the media have a strong influence on our information-driven societies. We could imagine that their primary purpose would be to inform objectively and to reflect the state of mind of all, or part of, the population. But are they really ? 
+
 In our project we aim to analyze the tone and the sentiments conveyed by them. In order to do so, we will use the GDELT V2.0 dataset, allowing to explore on several axes, such as time and localisation. Moreover, based on the UN “World happiness report”, we will look if there is a correlation between the state of mind of the inhabitants per country and their respective media. 
 
 # Research questions
