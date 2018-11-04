@@ -35,5 +35,4 @@ In order to use this rather big dataset (112 GB), we will have to connect to the
 
   - Could you confirm that this project is conceivable and that it will not require the use of Google BigQuery tool ?
   - What is the best approach towards performing tests on the datasets in the cluster? 
-  - 
 
