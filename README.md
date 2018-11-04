@@ -15,7 +15,7 @@ We will guide our work with the following questions:
 
 # Dataset
   * **Event table** uniquely records global events, along with principal components and actors. We will be mostly interested in the fields GlobalEventId, EventCode, Day and AvgTone.
-* **Mention table** records all individual mentions of each event. We will be in similar fields as for the Event table.
+* **Mention table** records all individual mentions of each event. We will be interested in similar fields as for the Event table.
 In these two tables, records are stored one per line, tab-delimited.
 * **GKG** records a list of articles and documents along with their main themes and associated events. We will mainly focus on fields GKGRecordId, Date, Locations, Tone and GCAM. More details about this columns can be found on the [codebook](http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.pdf)  related to GKG dataset.
 The file format of the GKG is more sophisticated and will require more preprocessing. However, it has also a ‘.csv’ extension and it is tab-delimited.
