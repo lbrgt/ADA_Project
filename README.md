@@ -14,11 +14,10 @@ We will guide our work with the following questions:
   - Can media reliably translate the state of happiness of a country ?  
 
 # Dataset
-  - [GDELT V2](https://www.gdeltproject.org/data.html#documentation) gathering a huge amount of information about events happening all around the world and their corresponding media coverage. Especially, thanks to the [Global Content Analysis Measures (GCAM)](http://blog.gdeltproject.org/introducing-the-global-content-analysis-measures-gcam/), it extracts the sentiments expressed in the different information sources. This dataset is composed of three distinct parts : Event table, Mention table and a Global Knowledge Graph (GKG).
-* **Event table** uniquely records global events, along with principal components and actors.
-* **Mention table** records all individual mentions of each event.
+  * **Event table** uniquely records global events, along with principal components and actors. We will be mostly interested in the fields GlobalEventId, EventCode, Day and AvgTone.
+* **Mention table** records all individual mentions of each event. We will be in similar fields as for the Event table.
 In these two tables, records are stored one per line, tab-delimited.
-* **GKG** records a list of articles and documents along with their main themes and associated events. In this dataset, among 27 features, we will particularly take the following columns  into account: GKGRECORDID, DATE, LOCATIONS, TONE, GCAM. 
+* **GKG** records a list of articles and documents along with their main themes and associated events. We will mainly focus on fields GKGRecordId, Date, Locations, Tone and GCAM. More details about this columns can be found on the [codebook](http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.pdf)  related to GKG dataset.
 The file format of the GKG is more sophisticated and will require more preprocessing. However, it has also a ‘.csv’ extension and it is tab-delimited.
 
 More details about this columns can be found on the [codebook](http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.pdf)  related to GKG dataset.
@@ -34,5 +33,7 @@ In order to use this rather big dataset (112 GB), we will have to connect to the
 
 # Questions for TAa
 
-Could you confirm that this project is conceivable and that it will not require the use of Google BigQuery tool ?
+  - Could you confirm that this project is conceivable and that it will not require the use of Google BigQuery tool ?
+  - What is the best approach towards performing tests on the datasets in the cluster? 
+  - 
 
