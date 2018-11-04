@@ -14,6 +14,7 @@ We will guide our work with the following questions:
   - Can media reliably translate the state of happiness of a country ?  
 
 # Dataset
+[GDELT V2](https://www.gdeltproject.org/data.html#documentation) gathering a huge amount of information about events happening all around the world and their corresponding media coverage. Especially, thanks to the [Global Content Analysis Measures (GCAM)](http://blog.gdeltproject.org/introducing-the-global-content-analysis-measures-gcam/), it extracts the sentiments expressed in the different information sources. This dataset is composed of three distinct parts : Event table, Mention table and a Global Knowledge Graph (GKG).
   * **Event table** uniquely records global events, along with principal components and actors. We will be mostly interested in the fields GlobalEventId, EventCode, Day and AvgTone.
 * **Mention table** records all individual mentions of each event. We will be interested in similar fields as for the Event table.
 In these two tables, records are stored one per line, tab-delimited.
