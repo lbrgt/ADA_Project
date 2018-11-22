@@ -68,58 +68,6 @@ EVENTS_SCHEMA = StructType([
     StructField("SOURCEURL",StringType(),True)
     ])
 
-MENTIONS_SCHEMA = StructType([
-    StructField("GLOBALEVENTID",LongType(),True),
-    StructField("EventTimeDate",LongType(),True),
-    StructField("MentionTimeDate",LongType(),True),
-    StructField("MentionType",LongType(),True),
-    StructField("MentionSourceName",StringType(),True),
-    StructField("MentionIdentifier",StringType(),True),
-    StructField("SentenceID",LongType(),True),
-    StructField("Actor1CharOffset",LongType(),True),
-    StructField("Actor2CharOffset",LongType(),True),
-    StructField("ActionCharOffset",LongType(),True),
-    StructField("InRawText",LongType(),True),
-    StructField("Confidence",LongType(),True),
-    StructField("MentionDocLen",LongType(),True),
-    StructField("MentionDocTone",FloatType(),True),
-    StructField("MentionDocTranslationInfo",StringType(),True),
-    StructField("Extras",StringType(),True)
-    ])
-
-GKG_SCHEMA2 = StructType([StructField("GKGRECORDID",StringType(),True)])
-
-GKG_SCHEMA = StructType([
-        StructField("GKGRECORDID",StringType(),True),
-        StructField("DATE",StringType(),True),
-        #StructField("DATE",TimestampType(),True),
-        StructField("SourceCollectionIdentifier",StringType(),True),
-        StructField("SourceCommonName",StringType(),True),
-        StructField("DocumentIdentifier",StringType(),True),
-        StructField("Counts",StringType(),True),
-        StructField("V2Counts",StringType(),True),
-        StructField("Themes",StringType(),True),
-        StructField("V2Themes",StringType(),True),
-        StructField("Locations",StringType(),True),
-        StructField("V2Locations",StringType(),True),
-        StructField("Persons",StringType(),True),
-        StructField("V2Persons",StringType(),True),
-        StructField("Organizations",StringType(),True),
-        StructField("V2Organizations",StringType(),True),
-        StructField("V2Tone",StringType(),True),
-        StructField("Dates",StringType(),True),
-        StructField("GCAM",StringType(),True),
-        StructField("SharingImage",StringType(),True),
-        StructField("RelatedImages",StringType(),True),
-        StructField("SocialImageEmbeds",StringType(),True),
-        StructField("SocialVideoEmbeds",StringType(),True),
-        StructField("Quotations",StringType(),True),
-        StructField("AllNames",StringType(),True),
-        StructField("Amounts",StringType(),True),
-        StructField("TranslationInfo",StringType(),True),
-        StructField("Extras",StringType(),True)
-        ])
-
 REDUCED_EVENT_SCHEMA = StructType([
     StructField("GLOBALEVENTID",LongType(),True),
     StructField("Day_DATE",StringType(),True),
@@ -134,13 +82,13 @@ REDUCED_EVENT_SCHEMA = StructType([
     ])
 
 DATA_DIR = "hdfs:///datasets/gdeltv2"
+events_df = spark.read.csv(os.path.join(DATA_DIR, "*.export.CSV"))
+events_df = spark.read.option("sep", "\t").csv(os.path.join(DATA_DIR, "*.export.CSV"),schema=EVENTS_SCHEMA)
 
-#events_df = spark.read.option("sep", "\t").csv(os.path.join(DATA_DIR, "*.export.CSV"),schema=EVENTS_SCHEMA)
-#mentions_df = spark.read.option("sep", "\t").csv(os.path.join(DATA_DIR, "*.mentions.CSV"),schema=MENTIONS_SCHEMA)
-gkg_df = spark.read.option("sep", "\t").csv(os.path.join(DATA_DIR, "*.gkg.csv"),schema=GKG_SCHEMA)
+event_dates = events_df.select("MonthYear_Date").withColumn("MonthYear_Date", events_df['MonthYear_Date']) \
+                       .sort('MonthYear_Date', ascending=True )
 
-gkg_df = gkg_df.select("GKGRECORDID").groupBy("GKGRECORDID").count()
-gkg_df.show()
+event_dates.show(30)
 
 #not_english_gkg_df = gkg_df.filter(gkg_df.TranslationInfo.isNotNull())
 #print(not_english_gkg_df.count())
@@ -157,11 +105,7 @@ gkg_df.show()
               #.cast(LongType())).sort('Year_Date', ascending=True )
 
 
-#a = spark.read.option("sep", "\t").csv(os.path.join(DATA_DIR, "*.gkg.csv"),schema=GKG_SCHEMA)
-#dates_year = a.select("DATE").withColumn("DATE", a['DATE']) \
-             # .sort('DATE', ascending=True )
-#dates_year.show(1)
-#a.write.parquet('all_events_parquet', mode='overwrite')
+
 
 #Create an empty dataframe
 #df = spark.createDataFrame([], REDUCED_EVENT_SCHEMA)
@@ -183,3 +127,6 @@ gkg_df.show()
 
 #s_output, s_err = p.communicate()
 #l_file = s_output.split('\n')
+
+
+
