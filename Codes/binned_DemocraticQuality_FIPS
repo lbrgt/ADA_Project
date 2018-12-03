@@ -1,0 +1,8 @@
+"(-2.5, -2.0]","['SO', 'OD', 'SU', 'SY', 'YM']"
+"(-2.0, -1.5]","['AF', 'ET', 'IZ', 'LY', 'PK']"
+"(-1.5, -1.0]","['AG', 'AJ', 'BA', 'CT', 'CD', 'CH', 'EG', 'IR', 'LE', 'NI', 'RS', 'SA', 'TI', 'TH', 'TU', 'TX', 'UZ', 'VE']"
+"(-1.0, -0.5]","['AO', 'AM', 'BG', 'BO', 'BY', 'CM', 'CU', 'DJ', 'GB', 'GV', 'HA', 'JO', 'KZ', 'KE', 'KG', 'LA', 'ML', 'MR', 'BM', 'NP', 'NG', 'RP', 'RW', 'WZ', 'UG', 'UP', 'VM', 'ZI']"
+"(-0.5, 0.0]","['BL', 'BK', 'UV', 'CB', 'CO', 'CN', 'EC', 'GG', 'GT', 'GY', 'HO', 'IN', 'ID', 'IS', 'KU', 'LT', 'LI', 'MK', 'MA', 'MI', 'MY', 'MX', 'MD', 'MO', 'MZ', 'NU', 'MU', 'QA', 'SL', 'CE', 'TZ', 'TO', 'TS', 'AE', 'ZA']"
+"(0.0, 0.5]","['AL', 'AR', 'BH', 'BN', 'BT', 'BR', 'BU', 'DR', 'ES', 'GH', 'GR', 'JM', 'MJ', 'PM', 'PA', 'PE', 'RO', 'SG', 'RI', 'SF', 'NS', 'TD']"
+"(0.5, 1.0]","['BE', 'BC', 'CI', 'CS', 'HR', 'CY', 'EN', 'FR', 'HU', 'IT', 'LG', 'LH', 'MP', 'MG', 'WA', 'PL', 'SN', 'LO', 'SI', 'SP', 'UK', 'US']"
+"(1.0, 1.5]","['AS', 'AU', 'CA', 'EZ', 'DA', 'FI', 'GM', 'IC', 'EI', 'JA', 'LU', 'MT', 'NL', 'NZ', 'NO', 'PO', 'SW', 'SZ', 'UY']"
