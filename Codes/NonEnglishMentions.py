@@ -1,1 +1,0 @@
-DATA_DIR = "hdfs:////home/sgoekce/"
