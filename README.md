@@ -40,13 +40,13 @@ In order to use this rather big dataset, we will have to preprocess it on Google
   Moreover, the stability of the country, represented by the Golstein Scale indicator is also correlated to the Happiness score.
 
   <p align="center">
-    <img width="460" height="460" src="boxplots_happiness.pdf">
+    <img width="460" height="460" src="boxplots_happiness.png">
   </p>
 
   * A negative correlation is also found between the Democracy index and the average tone of the media inside a country. In addition, there is a negative correlation between the Democracy index of a country and its bias in terms of representative tone.
 
   <p align="center">
-    <img width="460" height="460" src="boxplots_political.pdf">
+    <img width="460" height="460" src="boxplots_political.png">
   </p>
 
   * The following figure states that there is a positive correlation between corruption and the weight of protest news among all the news for a     country and a negative correlation between happiness score, confidence in government, democracy index and again the importance of protest news in media for a country:
