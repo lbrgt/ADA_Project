@@ -34,18 +34,19 @@ In order to use this rather big dataset, we will have to preprocess it on Google
 
   - A gentle reminder: We decided to use the Democracy Index report to have an idea about country democracy qualities rather than the World Happiness Report which also contains information about democracy of countries for the one and only reason which is Democracy Index report allows us to put countries in 4 different categories namely *full democracy*, *flawed democracy*, *hybrid regime* and *authoritarian*.
 
+
+# Highlights:
+
+
+
 # Work Repartition
-    * Sinan Gökçe:
+  * Sinan Gökçe:
 
-    * Juliane Dervaux:
+  * Juliane Dervaux:
 
-    * Lucas Burget:
+  * Lucas Burget:  
 
-# A list of internal milestones up until project milestone 2
 
-  - 7/11: Understand how to use cluster ! Find precisely which fields of the different datasets we want to focus on. Explore the very rich possibilities offered by the GCAM content. Deepen our understanding of the complex links between pieces of information.
-  - 14/11: Data wrangling and cleaning. Sorting out relevant data for our analysis. 
-  - 25/11: Extract interesting information from our gathered data in order to provide answers to the questions listed above.
 
 
 
