@@ -50,6 +50,8 @@ In order to use this rather big dataset, we will have to preprocess it on Google
     <img width="460" height="460" src="boxplots.png">
   </p>
 
+  Please notice that more the country becomes democratic, more the protests are correlated with the population.
+
 
 
 
