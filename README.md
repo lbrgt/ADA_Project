@@ -67,8 +67,8 @@ In order to use this rather big dataset, we will have to preprocess it on Google
 
 # Work Repartition
   Given the tasks required by our project, we can easily mention that each teammate worked properly on every single part to improve the quality of the project. Here is still a view of work repartition since we are asked to do so:
-  * Sinan Gökçe: Writing up te report, crawling the data, implementing bootstrapping algorithm, plotting graphs during data analysis, tabulating final results.
+  * Sinan Gökçe: Writing up te report, complementary data research, implementing bootstrapping algorithm, plotting graphs during data analysis, preparing poster, tabulating final results.
 
-  * Juliane Dervaux: Writing up the report, crawling the data, plotting graphs during data analysis, tabulating final results. 
+  * Juliane Dervaux: Writing up the report, plotting graphs during data analysis, tabulating final results, Google BigQuery, preparing poster.
 
-  * Lucas Burget: Writing up the report, preliminary data analysis, oral presentation, plotting graphs during data analysis, tabulating final results. 
+  * Lucas Burget: Writing up the report, preliminary data analysis, complementary data research, plotting graphs during data analysis, tabulating final results, oral presentation, preparing poster.
