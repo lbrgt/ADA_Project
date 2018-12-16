@@ -36,6 +36,7 @@ In order to use this rather big dataset, we will have to preprocess it on Google
 
 
 # Highlights:
+![Average Tone](AvgTone.png)
 
 
 
