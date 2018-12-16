@@ -36,17 +36,27 @@ In order to use this rather big dataset, we will have to preprocess it on Google
 
 
 # Highlights:
-The following graph shows that media are following a negative tone whatever the event is:
-![Average Tone](AvgTone.png)
+  * The following graph shows that media are following a negative tone whatever the event is:
+  ![Average Tone](AvgTone.png)
 
-The following figure states that there is a positive correlation between corruption and the weight of protest news among all the news for a country and a negative correlation between happiness score, confidence in government, democracy index and again the importance of protest news in media for a country:
+  * The following figure states that there is a positive correlation between corruption and the weight of protest news among all the news for a     country and a negative correlation between happiness score, confidence in government, democracy index and again the importance of protest news in media for a country:
 
-<p align="center">
-  <img width="360" height="300" src="protest-indicators.png">
-</p>
+  <p align="center">
+    <img width="360" height="300" src="protest-indicators.png">
+  </p>
+
+  * One can visualize the box plots for correlation factors between protest events and democracy quality and population for each category of democracy (Authoritarian, Hybrid Regime, Flawed Democracy, Full Democracy) on the following figure:
+  <p align="center">
+    <img width="460" height="460" src="boxplots.png">
+  </p>
+
+  Please notice that more the country becomes democratic, more the protests are correlated with the population.
+
+
 
 
 # Work Repartition
+  Given the tasks required by our project, we can easily mention that each teammate worked properly on every single part to improve the quality of the project. Here is still a view of work repartition since we are asked to do so:
   * Sinan Gökçe:
 
   * Juliane Dervaux:
