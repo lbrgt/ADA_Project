@@ -36,7 +36,14 @@ In order to use this rather big dataset, we will have to preprocess it on Google
 
 
 # Highlights:
+The following graph shows that media are following a negative tone whatever the event is:
+![Average Tone](AvgTone.png)
 
+The following figure states that there is a positive correlation between corruption and the weight of protest news among all the news for a country and a negative correlation between happiness score, confidence in government, democracy index and again the importance of protest news in media for a country:
+
+<p align="center">
+  <img width="360" height="300" src="protest-indicators.png">
+</p>
 
 
 # Work Repartition
