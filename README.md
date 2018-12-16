@@ -45,7 +45,7 @@ In order to use this rather big dataset, we will have to preprocess it on Google
     <img width="360" height="300" src="protest-indicators.png">
   </p>
 
-  * One can visualize the box plots for correlation factors between protest events and democracy quality and population for each category of democracy on the following figure:
+  * One can visualize the box plots for correlation factors between protest events and democracy quality and population for each category of democracy (Authoritarian, Hybrid Regime, Flawed Democracy, Full Democracy) on the following figure:
   <p align="center">
     <img width="460" height="460" src="boxplots.png">
   </p>
