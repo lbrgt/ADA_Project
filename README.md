@@ -55,8 +55,8 @@ In order to use this rather big dataset, we will have to preprocess it on Google
 
 
 
-
 # Work Repartition
+  Given the tasks required by our project, we can easily mention that each teammate worked properly on every single part to improve the quality of the project. Here is still a view of work repartition since we are asked to do so:
   * Sinan Gökçe:
 
   * Juliane Dervaux:
