@@ -45,8 +45,6 @@ The following figure states that there is a positive correlation between corrupt
   <img width="460" height="300" src="protest-indicators.png">
 </p>
 
-![Protes Indicators](protest-indicators.png){ width="800" height="600" style="display: block; margin: 0 auto" }
-
 
 # Work Repartition
   * Sinan Gökçe:
